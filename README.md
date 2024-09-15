@@ -5,7 +5,7 @@ Este projeto realiza web scraping no site de tecnologia **Adrenaline** para obte
 ## Funcionalidades
 
 - Coleta as principais notícias do site **Adrenaline** utilizando web scraping.
-- Retorna uma lista das notícias contendo o **título**.
+- Retorna uma lista das notícias contendo o **título** e **link**.
 - Exposição dos dados por meio de uma API REST, com resposta em formato **JSON**.
 
 ## Tecnologias Utilizadas
