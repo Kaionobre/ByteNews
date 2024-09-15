@@ -1,6 +1,8 @@
 from pydantic import BaseModel
+from datetime import date
 
-
-class Postragem(BaseModel):
+class Postagem(BaseModel):
     nome: str
+    link: str
+    data: date
     
