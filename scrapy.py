@@ -15,11 +15,13 @@ def pegar_noticias_e_links():
     for artigo in artigos:
         titulo_elemento = artigo.find('h2')
         link_elemento = artigo.find('a')
+        data_hora = artigo.find('span')
         
         if titulo_elemento and link_elemento:
             lista_noticias.append({
                 "titulo": titulo_elemento.text.strip(),
-                "link": link_elemento['href']
+                "data_e_hora": data_hora.text.strip(),
+                "link": link_elemento['href'],
             })
 
     return lista_noticias
