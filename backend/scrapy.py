@@ -14,14 +14,16 @@ def pegar_noticias_e_links():
 
     for artigo in artigos:
         titulo_elemento = artigo.find('h2')
-        link_elemento = artigo.find('a')
+        imagem_noticia = artigo.find('a').find('figure').find('img')
         data_hora = artigo.find('span')
+        link_elemento = artigo.find('a')
         
         if titulo_elemento and link_elemento:
             lista_noticias.append({
                 "titulo": titulo_elemento.text.strip(),
                 "data_e_hora": data_hora.text.strip(),
                 "link": link_elemento['href'],
+                "imagem": imagem_noticia['src']
             })
 
     return lista_noticias
