@@ -1,19 +1,16 @@
-# Projeto de Web Scraping e API - Notícias Adrenaline
+# ByteNews
 
-Este projeto realiza web scraping no site de tecnologia **Adrenaline** para obter as principais notícias e depois expõe essas informações em uma **API** utilizando **FastAPI**. O servidor retorna os dados em formato **JSON** para que possam ser consumidos por outras aplicações.
+ByteNews é uma aplicação que realiza web scraping no site de tecnologia **Adrenaline** para capturar as principais notícias, expondo-as através de uma API desenvolvida com **FastAPI**. O servidor retorna as informações em formato JSON, permitindo que outras aplicações as consumam facilmente.
 
 ## Funcionalidades
-
-- Coleta as principais notícias do site **Adrenaline** utilizando web scraping.
-- Retorna uma lista das notícias contendo o **título**, **data com hora** e **link**.
-- Exposição dos dados por meio de uma API REST, com resposta em formato **JSON**.
+- Coleta automática das principais notícias do site **Adrenaline**.
+- Retorna uma lista contendo **título**, **data** e **link** das notícias.
+- Exposição das informações através de uma API REST em formato JSON.
 
 ## Tecnologias Utilizadas
-
-- **Python** (linguagem principal)
-- **BeautifulSoup** (para o web scraping)
-- **FastAPI** (para a criação da API)
-- **Requests** (para fazer requisições HTTP)
-- **Uvicorn** (para servir a API)
-- **JSON** (formato de resposta da API)
-
+- **Python**: Linguagem principal do projeto.
+- **FastAPI**: Framework para desenvolvimento da API.
+- **BeautifulSoup**: Ferramenta para web scraping.
+- **Requests**: Biblioteca para requisições HTTP.
+- **Uvicorn**: Servidor para executar a aplicação.
+- **JSON**: Formato de resposta da API.
